@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Column as ColumnType, Task } from '../../types/kanban';
 import { TaskCard } from '../TaskCard/TaskCard';
-import { Plus, X, Edit2, Save } from 'lucide-react';
+import { X, Edit2, Save } from 'lucide-react'; 
 
 interface ColumnProps {
   column: ColumnType;
@@ -98,10 +98,10 @@ export const Column: React.FC<ColumnProps> = ({
                 'bg-red-500'} 
               text-white hover:opacity-90`}
           >
-            Add {priority} Task
-          </button>
-        ))}
-      </div>
-    </div>
-  );
+            Add {priority} Task 
+          </button> 
+        ))} 
+      </div> 
+    </div> 
+  ); 
 };

@@ -13,7 +13,8 @@ export const KanbanBoard: React.FC = () => {
     { id: '2', title: 'In Progress', tasks: [] },
     { id: '3', title: 'Done', tasks: [] }
   ]);
-  const { state, push, undo, redo, canUndo, canRedo } = useHistory(columns);
+  const { state, push, undo, redo, canUndo, canRedo } = useHistory(columns); 
+  console.log('Previous column states:', state); // Use 'state' here
   const [searchTerm, setSearchTerm] = useState('');
   const [draggedItem, setDraggedItem] = useState<DragItem | null>(null);
 
@@ -87,6 +88,7 @@ export const KanbanBoard: React.FC = () => {
     e.preventDefault();
     if (e.currentTarget instanceof HTMLElement) {
       e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.1)'; 
+      console.log('Dragging over column:', targetColumnId); 
     }
   };
 
