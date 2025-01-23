@@ -1,28 +1,30 @@
-# Kanban Board Application
+# Kanban Board
 
-A simple and interactive Kanban board application built with React and TypeScript, utilizing Tailwind CSS for styling. This app allows users to manage tasks visually by dragging and dropping them between columns.
+**A simple and intuitive Kanban board for managing tasks and projects.**
 
-## Features
+**Project Overview**
 
-- **Drag-and-Drop Interface**: Easily move tasks between columns.
-- **Dynamic Task Management**: Add and delete tasks and columns.
-- **Responsive Design**: Works seamlessly on various screen sizes.
-- **Dark Mode Support**: Automatically adjusts based on user preferences.
+This project is a web-based Kanban board application built with React and TypeScript. It allows users to create and manage tasks, columns, and boards in a drag-and-drop interface.
 
-## Technologies Used
+**Features**
 
-- **React**: A JavaScript library for building user interfaces.
-- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Vite**: A modern build tool that provides a fast development environment.
+* **Create and manage boards, columns, and tasks**
+* **Drag-and-drop tasks between columns**
+* **Edit task details and descriptions**
+* **Delete tasks and columns**
+* **Responsive design for mobile and desktop devices**
 
-## Getting Started
+**Technologies Used**
 
-### Prerequisites
+- React
+- TypeScript
+- HTML5
+- CSS3
+- Netlify (for deployment)
 
-Make sure you have the following installed:
+**Getting Started**
 
-- Node.js (v14 or higher)
-- npm (Node Package Manager)
+1. **For Demo:**
+**Visit ->**https://kanban-task-binod.netlify.app
 
-visit ->
+   
