@@ -85,16 +85,22 @@ export const KanbanBoard: React.FC = () => {
 
   const handleDragOver = (e: React.DragEvent, targetColumnId: string) => {
     e.preventDefault();
-    e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.1)';
+    if (e.currentTarget instanceof HTMLElement) {
+      e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.1)'; 
+    }
   };
 
   const handleDragLeave = (e: React.DragEvent) => {
-    e.currentTarget.style.backgroundColor = '';
+    if (e.currentTarget instanceof HTMLElement) {
+      e.currentTarget.style.backgroundColor = '';
+    }
   };
 
   const handleDrop = (e: React.DragEvent, targetColumnId: string) => {
     e.preventDefault();
-    e.currentTarget.style.backgroundColor = '';
+    if (e.currentTarget instanceof HTMLElement) {
+      e.currentTarget.style.backgroundColor = '';
+    }
 
     if (!draggedItem) return;
 
@@ -154,7 +160,7 @@ export const KanbanBoard: React.FC = () => {
           onClick={addNewColumn}
           className="flex-shrink-0 w-72 h-full min-h-[200px] bg-gray-200 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-300"
         >
-          <Plus className="w-6 h-6" />
+          <Plus className="w-6 h-6" /> 
           Add Column
         </button>
       </div>
